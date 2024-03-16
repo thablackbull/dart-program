@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: yellow;
+            margin: 0;
+            padding: 0;
+        }
+
+        header,
+        nav,
+        main,
+        footer {
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .gallery img {
+            border: 2px solid yellow;
+            border-radius: 5px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .menu li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to our Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#menu">Menu</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to our website! We aim to provide you with information and images related to architecture, technology, and food.</p>
+            <a href="https://unsplash.com/s/photos/technology">
+                <img src="tech.jpg" alt="Technology" title="Technology">
+            </a>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <a href="https://wallpapercave.com/w/wp5847349">
+                    <img src="minimal arch.jpg" alt="Minimalist Architecture" title="Minimalist Architecture">
+                </a>
+                <a href="https://wallpapercave.com/w/wp7532632">
+                    <img src="twill.jpg" alt="Minimalist Architecture" title="Minimalist Architecture">
+                </a>
+                <a href="https://wallpapercave.com/w/wp7532929">
+                    <img src="leah.jpg" alt="Minimalist Architecture" title="Minimalist Architecture">
+                </a>
+            </div>
+        </section>
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="menu">
+                <ul>
+                    <li><a href=https://unsplash.com/photos/toast-bread-with-blueberry-on-black-plate-zcUgjyqEwe8""><img src="french toast.jpg" alt="French toast" title="Food 1"></a> - Food Item 1</li>
+                    <li><a href="https://unsplash.com/photos/pizza-on-chopping-board-MqT0asuoIcU"><img src="pizza.jpg" alt="Pizza" title="Food 2"></a> - Food Item 2</li>
+                    <li><a href="https://unsplash.com/photos/grilled-meat-and-vegetable-on-the-table-UC0HZdUitWY"><img src="beef.jpg" alt="Grilled Chicken" title="Food 3"></a> - Food Item 3</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Image Links. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
